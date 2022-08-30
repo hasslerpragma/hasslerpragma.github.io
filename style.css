@@ -1,0 +1,239 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+  
+:root {
+    --header-height: 100px;
+    min-width: 320px;
+}
+  
+body {
+    margin: 40px;
+    background-color: #9ED2C6;
+    background: rgb(158,210,198);
+    background: linear-gradient(90deg, rgba(158,210,198,1) 0%, rgba(247,236,222,1) 100%);
+    font-family: 'Fredoka';
+}
+
+
+h1,h2,h3,h4,p{
+    cursor: default
+}
+
+footer{
+    padding: 1rem;
+}
+
+
+.color__primary{
+    color: #54BAB9;
+}
+
+.bg__primary{
+    background-color: #F7ECDE;
+}
+
+.bg__secondary{
+    background-color: #E9DAC1;
+}
+
+.bg__third{
+    background-color: #F7ECDE;
+}
+
+.wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+    display: grid;
+    -webkit-box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.75);
+}
+
+.header__content{
+    display: flex;
+    justify-content: left;
+    padding: 2rem 1rem;
+}
+
+.border__radius25{
+    border-radius: 25px;
+}
+
+.header__content img{
+   max-width: 200px;
+}
+
+.main__content{
+    display: flex;
+    padding: 2rem 1rem;
+    flex-wrap: wrap;
+}
+
+.main__content .container__left{
+    width: 55%;
+}
+
+.main__content .container__right{
+    width: 40%;
+    padding: 20px;
+}
+
+.main__content .container__left .name__content{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+}
+
+.main__content .container__left .name__content h1{
+    font-weight: 500;
+}
+
+.main__content .container__left .name__content img{
+    max-width: 50px;
+    max-height: 50px;
+    align-self: center;
+    filter: drop-shadow(0px 0px 3px #A2B5BB);
+}
+
+.main__content .container__left .img__pokemon{
+   padding: 1rem;
+   text-align: center;
+}
+.main__content .container__left .img__pokemon img{
+    max-width: 320px;
+    width: 100%;
+}
+
+.main__content .container__right{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.main__content .container__right .infoBox__pokemon{
+    text-align: center;
+}
+.main__content .container__right .infoBox__pokemon h2{
+    font-weight: 400;
+}
+.main__content .container__right .infoBox__pokemon p{
+    font-weight: 100;
+}
+
+.footer__content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__content .footer__contentLeft {
+    width: 30%;
+}
+
+.footer__content .footer__contentLeft h3 {
+    padding: 40px 0;
+    text-align: center;
+    font-weight: 500;
+}
+
+.footer__content .footer__contentRight {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer__content .footer__contentRight img{
+    max-width: 120px;
+    max-height: 120px;
+    background-color: #9ED2C6;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.footer__content .footer__contentRight img:hover{
+    filter: brightness(0.75);
+}
+
+@media only screen and (max-width: 800px) {
+    .footer__content .footer__contentRight {
+        max-width: 350px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+      
+    body {
+        margin: 0;
+    }
+
+    .wrapper {
+        margin: 0 auto;
+    }
+
+    .header__content{
+        justify-content: center;
+    }
+    .main__content .container__left{
+        width: 100%;
+    }
+    
+    .main__content .container__right{
+        width: 75%;
+        margin: auto;
+    }
+
+    .footer__content .footer__contentLeft h3 {
+        padding: 0;
+    }
+
+    .footer__content .footer__contentLeft {
+        width: 100%;
+    }
+
+    .footer__content .footer__contentRight {
+        max-width: 300px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .footer__content .footer__contentRight img{
+        flex: 0 0 auto;
+    }
+
+    .main__content .container__left{
+        position: relative;
+    }
+
+    .main__content .container__left .img__pokemon{
+        margin: 0;
+        position: absolute;
+        top: 170px;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .main__content .container__right{
+        margin-top: 140px;
+        grid-template-columns: none;
+    }
+
+    .main__content .container__right .infoBox__pokemon{
+        display: flex;
+        padding-inline: 1rem;
+    }
+
+    .main__content .container__right .infoBox__pokemon h3{
+        width: 60%;
+        text-align: left;
+    }
+
+    .main__content .container__right .infoBox__pokemon p{
+        width: 40%;
+        text-align: left;
+        margin: auto;
+    }
+   
+}
