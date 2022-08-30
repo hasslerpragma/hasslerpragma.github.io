@@ -144,7 +144,7 @@ footer{
 }
 
 .footer__content .footer__contentRight img{
-    max-width: 120px;
+    max-width: 25%;
     max-height: 120px;
     background-color: #9ED2C6;
     border-radius: 50%;
@@ -156,11 +156,6 @@ footer{
     filter: brightness(0.75);
 }
 
-@media only screen and (max-width: 800px) {
-    .footer__content .footer__contentRight {
-        max-width: 350px;
-    }
-}
 
 @media only screen and (max-width: 600px) {
       
@@ -199,6 +194,7 @@ footer{
     }
 
     .footer__content .footer__contentRight img{
+        max-width: 120px;
         flex: 0 0 auto;
     }
 
