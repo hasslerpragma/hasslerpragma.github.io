@@ -158,21 +158,29 @@ footer{
     border-radius: 50%;
     cursor: pointer;
     max-width: 25%;
-    max-height: 120px;
     list-style: none;
+    position: relative;
+    height: 120px;
+    overflow: hidden;
 }
 .footer__content .footer__contentRight ul li img{
     max-height: 120px;
+    max-width: 120px;
     width: 100%;
+    height: 100%;
     transition: transform .5s; 
     filter: brightness(0.1);
+    object-fit: contain;
 }
 
-.footer__content .footer__contentRight ul li img:hover{
+.footer__content .footer__contentRight ul li:hover{
+    overflow: unset;
+}
+
+.footer__content .footer__contentRight ul li:hover img{
     filter: brightness(1);
-    transform: scale(1.2)
+    transform: rotateY(360deg) scale(1.4);
 }
-
 
 @media only screen and (max-width: 600px) {
       
