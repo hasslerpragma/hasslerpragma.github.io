@@ -100,6 +100,10 @@ footer{
 .main__content .container__left .img__pokemon{
    padding: 1rem;
    text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 360px;
 }
 .main__content .container__left .img__pokemon img{
     transition: transform .5s; 
@@ -197,11 +201,15 @@ footer{
     }
     .main__content .container__left{
         width: 100%;
+        z-index: 1;
     }
     
     .main__content .container__right{
+        position: relative;
+        top: -50px;
         width: 75%;
         margin: auto;
+        grid-template-columns: none;
     }
 
     .footer__content .footer__contentLeft h3 {
@@ -212,8 +220,13 @@ footer{
         width: 100%;
     }
 
+    .main__content .container__left .img__pokemon{
+        height: 100%;
+        align-items: flex-start;
+    }
+
     .main__content .container__left .img__pokemon img{
-        width: 200px;
+        max-width: 300px;
     }
 
     .footer__content .footer__contentRight {
@@ -229,24 +242,6 @@ footer{
 
     .footer__content .footer__contentRight ul li img{
         filter: brightness(1);
-    }
-
-    .main__content .container__left{
-        position: relative;
-    }
-
-    .main__content .container__left .img__pokemon{
-        margin: 0;
-        position: absolute;
-        top: 170px;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
-
-    .main__content .container__right{
-        margin-top: 140px;
-        grid-template-columns: none;
     }
 
     .main__content .container__right .infoBox__pokemon{
