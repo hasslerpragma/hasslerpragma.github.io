@@ -89,7 +89,7 @@
         var getPokemon = SETTINGS.arrayPokemon[id];
         SETTINGS.mainPokemon = getPokemon;
         document.getElementById('namePokemon').innerText = getPokemon.name;
-        document.getElementById('no').innerText = getPokemon.no;
+        document.getElementById('noPokemon').innerText = getPokemon.no;
         document.getElementById('imgFirstPokemon').src = getPokemon.img;
         document.getElementById('imgFirstTypePokemon').src = getPokemon.imgType;
         document.getElementById('levelPokemon').innerText = getPokemon.level;
