@@ -6,6 +6,7 @@
    <link rel="icon" href="assets/icon-pokedex.png">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="stylesheet" href="/styles/index.css">
    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
    <title>Pokedex by Hassler</title>
 </head>
@@ -24,11 +25,11 @@
             <div class="main__content">
                 <div class="container__left">
                     <div class="name__content bg__third border__radius25">
-                        <img src="https://static.wikia.nocookie.net/pokemongo_es_gamepedia/images/3/38/Type_Fuego.png" title="FUEGO"/> 
+                        <img src="https://static.wikia.nocookie.net/pokemongo_es_gamepedia/images/3/38/Type_Fuego.png" id="imgFirstTypePokemon" title="FUEGO"/> 
                         <h1 class="color__primary" id="namePokemon">CHARIZARD</h1>
                     </div>
                     <div class="img__pokemon">
-                        <img src="/assets/charizard.png" title="CHARIZARD"/> 
+                        <img src="/assets/charizard.png" id="imgFirstPokemon" title="CHARIZARD"/> 
                     </div>
                 </div>
                 <div class="container__right bg__third border__radius25">
@@ -50,16 +51,18 @@
                     </h3>
                 </div>
                 <div class="footer__contentRight">
-                    <img src="https://static.wikia.nocookie.net/espokemon/images/e/e3/Squirtle.png" alt="pokemon" title="SQUIRTILE"/>
-                    <img src="https://static.wikia.nocookie.net/espokemon/images/d/d3/Mewtwo.png" alt="pokemon" title="MEWTWO"/>
-                    <img src="https://static.wikia.nocookie.net/espokemon/images/4/43/Bulbasaur.png" alt="pokemon" title="BULBASAUR"/>
-                    <img src="https://static.wikia.nocookie.net/espokemon/images/0/0b/Snorlax.png" alt="pokemon" title="SNORLAX"/>
+                    <ul>
+                        <li><img src="https://static.wikia.nocookie.net/espokemon/images/e/e3/Squirtle.png" alt="pokemon" title="SQUIRTILE"/></li>
+                        <li><img src="https://static.wikia.nocookie.net/espokemon/images/d/d3/Mewtwo.png" alt="pokemon" title="MEWTWO"/></li>
+                        <li><img src="https://static.wikia.nocookie.net/espokemon/images/4/43/Bulbasaur.png" alt="pokemon" title="BULBASAUR"/></li>
+                        <li><img src="https://static.wikia.nocookie.net/espokemon/images/0/0b/Snorlax.png" alt="pokemon" title="SNORLAX"/></li>
+                    </ul>
                 </div>
             </section>
         </footer>
 
    </div>
-   <link rel="stylesheet" href="/style.css">
-   <script src="/index.js"></script>
+  
+   <script src="/js/index.js"></script>
 </body>
 </html>
