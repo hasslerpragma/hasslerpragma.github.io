@@ -3,18 +3,7 @@
     var t=this;  
     var SETTINGS={
         isActive: true,
-        mainPokemon: {
-            name: '',
-            img: '',
-            imgType: '',
-            no: '',
-            level: 0,
-            type: '',
-            hability: '',
-            height: '',
-            weight: '',
-            caption: ''
-        },
+        mainPokemon: {},
         arrayPokemon: [
             {
                 name: 'CHARIZARD',
@@ -78,7 +67,6 @@
             }
         ]
     };
-
     var init= function(){
         document.addEventListener("DOMContentLoaded", function(event) { 
             if(SETTINGS.isActive){
