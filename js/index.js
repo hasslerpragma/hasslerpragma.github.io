@@ -12,7 +12,8 @@
             type: '',
             hability: '',
             height: '',
-            weight: ''
+            weight: '',
+            caption: ''
         },
         arrayPokemon: [
             {
@@ -24,7 +25,8 @@
                 type: 'FIRE',
                 hability: 'FLAMES',
                 height: '1.7 m',
-                weight: '90.5 kg'
+                weight: '90.5 kg',
+                caption: 'Escupe un fuego tan caliente que funde las rocas. Causa incendios forestales sin querer 😰'
             },
             {
                 name: 'SQUIRTLE',
@@ -35,7 +37,8 @@
                 type: 'WATER',
                 hability: 'TORRENT',
                 height: '0.5 m',
-                weight: '9.0 kg'
+                weight: '9.0 kg',
+                caption: 'Cuando retrae su largo cuello en el caparazón, dispara agua a una presión increíble 😎 '
             },
             {
                 name: 'MEWTWO',
@@ -46,7 +49,8 @@
                 type: 'PSYCHIC',
                 hability: 'PRESSURE',
                 height: '2.0 m',
-                weight: '122.0 kg'
+                weight: '122.0 kg',
+                caption: 'Su ADN es casi el mismo que el de Mew. Sin embargo, su tamaño y carácter son muy diferentes 🧠 '
             },
             {
                 name: 'BULBASAUR',
@@ -57,7 +61,8 @@
                 type: 'GRASS - POISON',
                 hability: 'OVERGROW',
                 height: '0.7 m',
-                weight: '6.9 kg'
+                weight: '6.9 kg',
+                caption: 'Este Pokémon nace con una semilla en el lomo, que brota con el paso del tiempo 🌱'
             },
             {
                 name: 'SNORLAX',
@@ -68,7 +73,8 @@
                 type: 'NORMAL',
                 hability: 'THICK FAT',
                 height: '2.1 m',
-                weight: '460.0 kg'
+                weight: '460.0 kg',
+                caption: 'No se encuentra satisfecho hasta haber ingerido 400 kg de comida cada día. Cuando acaba de comer, se queda dormido 😴'
             }
         ]
     };
@@ -97,6 +103,7 @@
         document.getElementById('habilityPokemon').innerText = getPokemon.hability;
         document.getElementById('heightPokemon').innerText = getPokemon.height;
         document.getElementById('weightPokemon').innerText = getPokemon.weight;
+        document.getElementById('mainPokemonCaption').innerText = getPokemon.caption;
 
         t.reloadOtherPokemon(id);
 

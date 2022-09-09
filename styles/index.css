@@ -20,6 +20,15 @@ h1,h2,h3,h4,p{
     cursor: default
 }
 
+figcaption{
+    color: #818181;
+    padding-block: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-inline: 2rem;
+}
+
 footer{
     padding: 1rem;
 }
@@ -105,7 +114,8 @@ footer{
    display: flex;
    justify-content: center;
    align-items: center;
-   height: 360px;
+   height: 420px;
+   position: relative
 }
 .main__content .container__left .img__pokemon img{
     transition: transform .5s; 
@@ -181,6 +191,7 @@ footer{
 
 .footer__content .footer__contentRight ul li:hover{
     overflow: unset;
+    z-index: 1;
 }
 
 .footer__content .footer__contentRight ul li:hover img{
@@ -192,6 +203,10 @@ footer{
       
     body {
         margin: 0;
+    }
+
+    figcaption{
+        display: none;
     }
 
     .wrapper {
@@ -244,6 +259,9 @@ footer{
 
     .footer__content .footer__contentRight ul li img{
         filter: brightness(1);
+    }
+    .footer__content .footer__contentRight ul li:hover img{
+        transform: none;
     }
 
     .main__content .container__right .infoBox__pokemon{
