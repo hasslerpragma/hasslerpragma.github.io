@@ -292,6 +292,7 @@ figcaption{
     .main__content .container__right .infoBox__pokemon{
         display: flex;
         padding-inline: 1rem;
+        margin: 0;
     }
 
     .main__content .container__right .infoBox__pokemon span{
