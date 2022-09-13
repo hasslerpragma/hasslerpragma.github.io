@@ -91,7 +91,7 @@
         document.getElementById('habilityPokemon').innerText = getPokemon.hability;
         document.getElementById('heightPokemon').innerText = getPokemon.height;
         document.getElementById('weightPokemon').innerText = getPokemon.weight;
-        document.getElementById('mainPokemonCaption').innerText = getPokemon.caption;
+       // document.getElementById('mainPokemonCaption').innerText = getPokemon.caption;
 
         t.reloadOtherPokemon(id);
 

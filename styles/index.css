@@ -61,15 +61,23 @@ figcaption{
 .header__content{
     display: flex;
     justify-content: left;
-    padding: 2rem 1rem;
+    padding: 20px 20px;
+}
+.header__content .titlepage{
+   color: #818181;
+   display: grid;
+  place-content: center;
 }
 
 .border__radius25{
     border-radius: 25px;
 }
 
+.header__content .header__figure {
+   margin: 0;
+}
 .header__content .header__img{
-   max-width: 200px;
+   max-width: 110px;
 }
 
 .main__content{
@@ -131,14 +139,21 @@ figcaption{
     display: grid;
     grid-template-columns: 50% 50%;
 }
-.main__content .container__right .infoBox__pokemon{
-    text-align: center;
+.main__content .container__right .infoBox__items{
+    display: contents;
 }
-.main__content .container__right .infoBox__pokemon h2{
-    font-weight: 400;
+.main__content .container__right .infoBox__pokemon{
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+}
+.main__content .container__right .infoBox__pokemon .title{
+    display: block;
+    margin-block: 1rem;
 }
 .main__content .container__right .infoBox__pokemon p{
     font-weight: 100;
+    font-size: 20px;
 }
 
 .footer__content {
@@ -169,8 +184,8 @@ figcaption{
 }
 
 .footer__content .footer__contentRight .footer__content_items .footer__pokemon_item{
+    padding: 5px;
     background-color: #9ED2C6;
-    border-radius: 50%;
     cursor: pointer;
     max-width: 25%;
     list-style: none;
@@ -215,6 +230,15 @@ figcaption{
     .header__content{
         justify-content: center;
     }
+
+    .header__content .titlepage{
+        font-size: 1.6em;
+    }
+     
+    .header__content .header__figure .header__img {
+        max-width: 80px;
+    }
+
     .main__content .container__left{
         width: 100%;
         z-index: 1;
@@ -222,7 +246,7 @@ figcaption{
     
     .main__content .container__right{
         position: relative;
-        top: -50px;
+        top: -65px;
         width: 75%;
         margin: auto;
         grid-template-columns: none;
@@ -230,6 +254,8 @@ figcaption{
 
     .footer__content .footer__contentLeft h3 {
         padding: 0;
+        font-size: 1.8em;
+        margin: 0;
     }
 
     .footer__content .footer__contentLeft {
@@ -268,7 +294,7 @@ figcaption{
         padding-inline: 1rem;
     }
 
-    .main__content .container__right .infoBox__pokemon h3{
+    .main__content .container__right .infoBox__pokemon span{
         width: 60%;
         text-align: left;
     }
@@ -277,6 +303,7 @@ figcaption{
         width: 40%;
         text-align: left;
         margin: auto;
+        font-size: 18px;
     }
    
 }

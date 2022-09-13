@@ -13,15 +13,15 @@
 <body>
 
    <div class="wrapper">
+
         <header>
             <div class="header__content bg__primary">
                 <figure class="header__figure">
                     <img class="header__img" src="/assets/logo-pokedex.png" title="logo pagina pokedex"/>
                 </figure>
+                <h1 class="titlepage">POKÉDEX_</h1>
             </div>
         </header>
-
-    
         
         <main class="bg__secondary">
             <div class="main__content">
@@ -33,17 +33,37 @@
                     <div class="img__pokemon">
                         <figure>
                             <img src="/assets/charizard.png" id="imgFirstPokemon" title="CHARIZARD"/> 
-                            <figcaption id="mainPokemonCaption"></figcaption>
+                            <!-- <figcaption id="mainPokemonCaption"></figcaption> -->
                         </figure>
                     </div>
                 </div>
                 <div class="container__right bg__third border__radius25">
-                    <div class="infoBox__pokemon"><h3 class="color__primary">NO</h3><p id="noPokemon">006</p></div>
-                    <div class="infoBox__pokemon"><h3 class="color__primary">LEVEL</h3><p id="levelPokemon">100</p></div>
-                    <div class="infoBox__pokemon"><h3 class="color__primary">TYPE</h3><p id="typePokemon">FIRE</p></div>
-                    <div class="infoBox__pokemon"><h3 class="color__primary">HABILITY</h3><p id="habilityPokemon">FLAMES</p></div>
-                    <div class="infoBox__pokemon"><h3 class="color__primary">HEIGHT</h3><p id="heightPokemon">1,7 m</p></div>
-                    <div class="infoBox__pokemon"><h3 class="color__primary">WEIGHT</h3><p id="weightPokemon">90,5 Kg</p></div>
+                    <ul class="infoBox__items">
+                        <li class="infoBox__pokemon">
+                            <span class="color__primary title">NO</span>
+                            <p id="noPokemon">006</p>
+                        </li>
+                        <li class="infoBox__pokemon">
+                            <span class="color__primary title">LEVEL</span>
+                            <p id="levelPokemon">100</p>
+                        </li>
+                        <li class="infoBox__pokemon">
+                            <span class="color__primary title">TYPE</span>
+                            <p id="typePokemon">FIRE</p>
+                        </li>
+                        <li class="infoBox__pokemon">
+                            <span class="color__primary title">HABILITY</span>
+                            <p id="habilityPokemon">FLAMES</p>
+                        </li>
+                        <li class="infoBox__pokemon">
+                            <span class="color__primary title">HEIGHT</span>
+                            <p id="heightPokemon">1,7 m</p>
+                        </li>
+                        <li class="infoBox__pokemon">
+                            <span class="color__primary title">WEIGHT</span>
+                            <p id="weightPokemon">90,5 Kg</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </main>
@@ -52,7 +72,7 @@
             <section class="footer__content">
                 <div class="footer__contentLeft">
                     <h3 class="color__primary">
-                        OTHER
+                        OTHERS
                     </h3>
                 </div>
                 <div class="footer__contentRight">
